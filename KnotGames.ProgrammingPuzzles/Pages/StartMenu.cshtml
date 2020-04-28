@@ -1,0 +1,15 @@
+﻿@page
+@model KnotGames.ProgrammingPuzzles.Pages.StartMenuModel
+@{
+    ViewData["Title"] = "StartMenu";
+}
+
+<h1>Start Menu</h1>
+@if (Model.GetPlayerName().ToUpper() == "DELIA")
+{
+    <p>Hi @Model.GetPlayerName()! Welcome to your game.</p>
+}
+else
+{
+    <p>Hi @Model.GetPlayerName()! Welcome to my game.</p>
+}
