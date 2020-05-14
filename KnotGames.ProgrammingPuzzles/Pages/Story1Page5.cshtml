@@ -1,0 +1,19 @@
+﻿@page
+@model KnotGames.ProgrammingPuzzles.Pages.Story1Page5Model
+@{
+    ViewData["Title"] = "Story1Page5";
+}
+    <p><a asp-page="StartMenu" class="button">Back</a></p>
+<p>Chapter3</p>
+<h1>Again?</h1>
+
+@if (Model.GetUnicornMode())
+{
+<p>Unicorns</p>
+}
+
+
+<p>I woke in the white room again, my head hurting. The computer was still there but the screen wasn't blank.</p>
+<p>What are you going to do?</p>
+<a asp-page="Story1Page5And6" class="button">Try to wake up</a>
+<a asp-page="Story1Page6" class="button">Look at whats on the screen</a>

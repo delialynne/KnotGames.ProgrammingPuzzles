@@ -4,32 +4,33 @@
     ViewData["Title"] = "Home page";
 }
 
-    <div class="text-center">
-        <h1 class="display-4">Wuzzup class mates!</h1>
+<div class="text-center">
+    <h1 class="display-4">Wuzzup class mates!</h1>
 
-        @if (string.IsNullOrEmpty(Model.GetPlayerName()))
-        {
-            <form method="post">
-                <p>What's your name?</p>
-                <input type="text" asp-for="Name" />
-                <input type="submit" />
-            </form>
-        }
-        else
-        {
-            <p>You told me it was @Model.GetPlayerName(), is that correct?</p>
+    @if (string.IsNullOrEmpty(Model.GetPlayerName()))
+    {
+    <form method="post">
+        <p>What's your name?</p>
+        <input type="text" asp-for="Name" />
+        <input class="button" type="submit" />
+    </form>
+    }
+    else
+    {
+        <p>You told me it was @Model.GetPlayerName(), is that correct?</p>
 
-            <form method="post">
-                <input type="hidden" asp-for="Name" value="" />
-                <input type="submit" value="No, I lied!" />
-            </form>
-            <form method="get" asp-page="StartMenu">
-                <input type="submit" value="Yes, it is correct." />
-            </form>
+        <form method="post">
+            <input type="hidden" asp-for="Name" value="" />
+            <input class="button" type="submit" value="No, I lied!" />
+        </form>
+        <br />
+        <form method="get" asp-page="StartMenu">
+            <input class="button" type="submit" value="Yes, it is correct." />
+        </form>
 
-        }
+    }
 
-        <hr />
-        <p><a href="https://github.com/delialynne/KnotGames.ProgrammingPuzzles/tree/master/KnotGames.ProgrammingPuzzles">Want to see my code?</a></p>
+    <hr />
+    <p><a href="https://github.com/delialynne/KnotGames.ProgrammingPuzzles/tree/master/KnotGames.ProgrammingPuzzles">Want to see my code?</a></p>
 
-    </div>
+</div>

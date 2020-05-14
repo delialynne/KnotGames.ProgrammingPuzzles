@@ -1,6 +1,52 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+
+
+
+
+.button {
+    box-shadow: 3px 4px 0px 0px #899599;
+    background: linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+    background-color: #ededed;
+    border-radius: 8px;
+    border: 1px solid #d6bcd6;
+    display: inline-block;
+    cursor: pointer;
+    color: #3a8a9e;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 7px 25px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #e1e2ed;
+}
+
+    .button:hover {
+        background: linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+        background-color: #bab1ba;
+    }
+
+    .button:active {
+        position: relative;
+        top: 1px;
+    }
+
+  
+
+       /* 
+.button:hover {
+    background: linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+    background-color: #019ad2;
+    text-decoration: none;
+}
+
+.button:active {
+    position: relative;
+    top: 1px;
+    text-decoration: none;
+}
+
+           */
 a.navbar-brand {
   white-space: normal;
   text-align: center;

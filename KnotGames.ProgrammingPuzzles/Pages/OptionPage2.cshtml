@@ -1,0 +1,21 @@
+﻿@page
+@model KnotGames.ProgrammingPuzzles.Pages.OptionPage2Model
+@{
+    ViewData["Title"] = "OptionPage2";
+}
+
+<h1>OPTIONS</h1>
+<p>This game is like a choose your own adventure book, you will be given a story and questions. You will get two to three answers to choose from and each one gives you different ending.There will be a story or two to play and show what I learned.</p>
+<p></p>
+
+<form method="post">
+    <label>
+        <input type="checkbox" asp-for="UnicornMode" />
+        Unicorn Mode
+    </label>
+    <br />
+    <input class="button" type="submit" value="Save Changes" />
+    <br />
+    <br />
+</form>
+<a asp-page="Options" class="button">Nevermind, go back.</a>

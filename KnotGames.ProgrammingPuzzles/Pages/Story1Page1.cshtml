@@ -1,0 +1,17 @@
+﻿@page
+@model KnotGames.ProgrammingPuzzles.Pages.Story1Page1Model
+@{
+    ViewData["Title"] = "Story1Page1";
+}<a asp-page="StoryPage" class="button">BACK</a>
+<p><h2>Chapter 1</h2></p>
+<h1>THE WHITE ROOM</h1>
+
+@if (Model.GetUnicornMode())
+{
+    <p> Unicorns, rainbow, no, unicorns farting rainbow skiting across my mind.</p>
+}
+
+<p>You awoke, startled by the bright light. You couldn't remember what you where dreaming about. You where in a white room, white walls, white floor, white ceiling, no door and the only thing in it was a tiny desk with a tiny desktop on it.</p>
+<h4>What will you do?</h4>
+<a asp-page="Story1Page2" class="button">Go to the computer</a>
+<a asp-page="Story1Page11And2" class="button">sit there and do nothing</a>

@@ -1,0 +1,27 @@
+﻿@page
+@model KnotGames.ProgrammingPuzzles.Pages.Story1Page62Model
+@{
+    ViewData["Title"] = "Story1Page62";
+}
+
+<h1>What Is JS Good At?</h1>
+<p><a asp-page="Wrong" class="button">Making Big Things With Lots of Pages</a></p>
+<p><a asp-page="Wrong" class="button">Making Small Things With Few Pages</a></p>
+<p><a asp-page="Wrong" class="button">Games</a></p>
+<p><a asp-page="Story1Page6And7" class="button">Games And Small Things</a></p>
+<p><a asp-page="Wrong" class="button">Games And Big Things</a></p>
+
+<p id="timer">You have 15 seconds left.</p>
+
+<script type="text/javascript">
+    var secondsLeft = 15 ;
+
+    // Do this every second
+    var timer = setInterval(function() {
+        secondsLeft = secondsLeft - 1;
+        $("#timer").text("You have " + secondsLeft + " seconds left.");
+        if (secondsLeft == 0) {
+            window.location = "@Url.Page("Wrong")";
+        }
+    }, 1000);
+</script>
