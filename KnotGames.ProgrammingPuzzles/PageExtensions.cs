@@ -10,7 +10,7 @@ namespace KnotGames.ProgrammingPuzzles.Pages
     public static class PageExtensions
     {
         public static string GetPlayerName(this PageModel pageModel) =>
-            pageModel.HttpContext.Session.GetString("Name") ?? "No Name";
+            pageModel.HttpContext.Session.GetString("Name") ?? "";
 
         public static void SetPlayerName(this PageModel pageModel, string name)
         {
